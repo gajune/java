@@ -1,0 +1,14 @@
+[13:24:06.229][ERROR][LoggingService           :   24] - 에러가 발생했어요.
+[13:24:06.233][ERROR][Log4jMain                :   28] - Didn't do it.
+[13:24:06.235][FATAL][Log4jMain                :   32] - [FATAL] 로그를 출력합니다.
+[13:24:06.235][ERROR][Log4jMain                :   33] - [ERROR] 로그를 출력합니다.
+[13:24:06.236][WARN ][Log4jMain                :   34] - [WARN] 로그를 출력합니다.
+[13:24:06.236][INFO ][Log4jMain                :   35] - [INFO] 로그를 출력합니다.
+[13:31:44.177][ERROR][LoggingService           :   24] - 에러가 발생했어요.
+[13:31:44.181][DEBUG][LoggingService           :   27] - 버그가 발생했어요.
+[13:31:44.181][ERROR][Log4jMain                :   28] - Didn't do it.
+[13:31:44.183][FATAL][Log4jMain                :   32] - [FATAL] 로그를 출력합니다.
+[13:31:44.184][ERROR][Log4jMain                :   33] - [ERROR] 로그를 출력합니다.
+[13:31:44.184][WARN ][Log4jMain                :   34] - [WARN] 로그를 출력합니다.
+[13:31:44.184][INFO ][Log4jMain                :   35] - [INFO] 로그를 출력합니다.
+[13:31:44.184][DEBUG][Log4jMain                :   36] - [DEBUG] 로그를 출력합니다.
