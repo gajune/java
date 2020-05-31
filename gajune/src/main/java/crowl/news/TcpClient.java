@@ -4,16 +4,17 @@ import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.Socket;
 
+
 /**
  * <pre>
- * kr.co.swh.lecture.network.tcp
+ * crowl.news 
  * TcpClient.java
  *
- * 설명 :TCP 클라이언트
+ * 설명 :
  * </pre>
  * 
- * @since : 2018. 6. 23.
- * @author : tobby48
+ * @since : 2020. 5. 24.
+ * @author : user
  * @version : v1.0
  */
 public class TcpClient {

@@ -3,16 +3,17 @@ package study.DB.hbm;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
+
 /**
  * <pre>
- * kr.co.swh.lecture.database.java.hibernate.hbm 
+ * study.DB.hbm 
  * Query.java
  *
- * 설명 : 하이버네이트 쿼리 테스트
+ * 설명 :
  * </pre>
  * 
- * @since : 2017. 10. 26.
- * @author : tobby48
+ * @since : 2020. 5. 24.
+ * @author : user
  * @version : v1.0
  */
 public class Query {

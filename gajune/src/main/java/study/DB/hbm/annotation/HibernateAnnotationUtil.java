@@ -9,16 +9,18 @@ import org.hibernate.service.ServiceRegistry;
 import crowl.maskmap.Db;
 import crowl.maskmap.StoreInfo;
 
+
+
 /**
  * <pre>
- * kr.co.swh.lecture.database.java.hibernate.annotation
+ * study.DB.hbm.annotation 
  * HibernateAnnotationUtil.java
  *
- * 설명 : 하이버네이트 어노테이션
+ * 설명 :
  * </pre>
  * 
- * @since : 2017. 10. 26.
- * @author : tobby48
+ * @since : 2020. 5. 24.
+ * @author : user
  * @version : v1.0
  */
 public class HibernateAnnotationUtil {

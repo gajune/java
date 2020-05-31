@@ -3,16 +3,17 @@ import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 
 
+
 /**
  * <pre>
- * kr.co.swh.lecture.opensource.quartz 
+ * crowl.maskmap 
  * SchedulerProcessor.java
  *
  * 설명 :
  * </pre>
  * 
- * @since : 2018. 11. 30.
- * @author : tobby48
+ * @since : 2020. 5. 24.
+ * @author : user
  * @version : v1.0
  */
 public class SchedulerProcessor implements org.quartz.Job{

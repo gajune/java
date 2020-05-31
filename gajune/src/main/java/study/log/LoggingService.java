@@ -3,16 +3,17 @@ package study.log;
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
 
+
 /**
  * <pre>
- * kr.co.swh.lecture.opensource.log4j
+ * study.log 
  * LoggingService.java
  *
- * 설명 :Log4j2 예제
+ * 설명 :
  * </pre>
  * 
- * @since : 2018. 1. 31.
- * @author : tobby48
+ * @since : 2020. 5. 24.
+ * @author : user
  * @version : v1.0
  */
 public class LoggingService {

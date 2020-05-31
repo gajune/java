@@ -1,4 +1,4 @@
-package study.Discord;
+package study.discord;
 
 import net.dv8tion.jda.api.entities.Message;
 import net.dv8tion.jda.api.entities.TextChannel;

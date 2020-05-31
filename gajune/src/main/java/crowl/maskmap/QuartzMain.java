@@ -9,16 +9,17 @@ import org.quartz.Trigger;
 import org.quartz.TriggerBuilder;
 import org.quartz.impl.StdSchedulerFactory;
 
+
 /**
  * <pre>
- * kr.co.swh.lecture.opensource.quartz
+ * crowl.maskmap 
  * QuartzMain.java
  *
  * 설명 :
  * </pre>
  * 
- * @since : 2018. 9. 30.
- * @author : tobby48
+ * @since : 2020. 5. 24.
+ * @author : user
  * @version : v1.0
  */
 public class QuartzMain {

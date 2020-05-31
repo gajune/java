@@ -1,4 +1,4 @@
-package study.Discord;
+package study.discord;
 
 import javax.security.auth.login.LoginException;
 

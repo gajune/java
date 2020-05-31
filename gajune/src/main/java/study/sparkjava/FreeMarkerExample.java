@@ -1,4 +1,4 @@
-package study.Sparkjava;
+package study.sparkjava;
 
 import static spark.Spark.get;
 import static spark.Spark.modelAndView;

@@ -2,16 +2,18 @@ package study.DB.hbm.annotation;
 
 import javax.persistence.*;
 
+
+
 /**
  * <pre>
- * kr.co.swh.lecture.database.java.hibernate.annotation
+ * study.DB.hbm.annotation 
  * Person.java
  *
- * 설명 : 하이버네이트 어노테이션 예제2
+ * 설명 :
  * </pre>
  * 
- * @since : 2017. 10. 26.
- * @author : tobby48
+ * @since : 2020. 5. 24.
+ * @author : user
  * @version : v1.0
  */
 @Entity

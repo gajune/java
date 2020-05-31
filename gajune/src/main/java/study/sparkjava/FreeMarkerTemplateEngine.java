@@ -1,4 +1,4 @@
-package study.Sparkjava;
+package study.sparkjava;
 
 import java.io.IOException;
 import java.io.StringWriter;

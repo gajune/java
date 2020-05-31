@@ -12,16 +12,17 @@ import java.sql.SQLException;
 import com.google.gson.Gson;
 import com.mysql.jdbc.Connection;
 
+
 /**
  * <pre>
- * kr.co.swh.lecture.network.tcp
+ * crowl.news 
  * TcpServer.java
  *
- * 설명 :TCP 서버
+ * 설명 :
  * </pre>
  * 
- * @since : 2018. 6. 23.
- * @author : tobby48
+ * @since : 2020. 5. 24.
+ * @author : user
  * @version : v1.0
  */
 public class TcpServer {

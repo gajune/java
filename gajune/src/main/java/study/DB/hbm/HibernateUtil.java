@@ -6,16 +6,17 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.service.ServiceRegistry;
 
+
 /**
  * <pre>
- * kr.co.swh.lecture.database.java.hibernate.hbm
+ * study.DB.hbm 
  * HibernateUtil.java
  *
- * 설명 : 하이버네이트 세션 및 설정 클래스
+ * 설명 :
  * </pre>
  * 
- * @since : 2017. 10. 26.
- * @author : tobby48
+ * @since : 2020. 5. 24.
+ * @author : user
  * @version : v1.0
  */
 public class HibernateUtil {
