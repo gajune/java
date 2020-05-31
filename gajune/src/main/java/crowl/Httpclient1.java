@@ -8,6 +8,7 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 
 public class Httpclient1 {
+	
     
     private static final String USER_AGENT = "Mozila/5.0";
     private static final String GET_URL = "http://www.google.com";    
