@@ -19,7 +19,7 @@ import com.google.gson.Gson;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.Statement;
 
-import study.DB.hbm.annotation.HibernateAnnotationUtil;
+import study.db.annotation.HibernateAnnotationUtil;
 
 public class MaskMap {
 	int num = 1;

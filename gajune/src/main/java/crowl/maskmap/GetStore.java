@@ -13,7 +13,7 @@ import org.hibernate.SessionFactory;
 
 import com.google.gson.Gson;
 
-import study.DB.hbm.annotation.HibernateAnnotationUtil;
+import study.db.annotation.HibernateAnnotationUtil;
 
 public class GetStore {
 	public static void main(String[] args) {
