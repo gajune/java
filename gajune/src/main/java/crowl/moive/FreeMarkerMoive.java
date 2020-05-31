@@ -29,6 +29,6 @@ public class FreeMarkerMoive {
             // The hello.ftl file is located in directory:
             // src/test/resources/spark/examples/templateview/freemarker
             return modelAndView(attributes, "movierank.ftl");
-        }, new FreeMarkerMoiveEngine());
+        }, new FreeMarkerTemplateEngine());
     }
 }
