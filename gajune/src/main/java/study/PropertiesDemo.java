@@ -4,6 +4,18 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+/**
+ * <pre>
+ * study 
+ * PropertiesDemo.java
+ *
+ * 설명 :
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class PropertiesDemo {
 	/**
 	 * 프로퍼티 파일을 스트림으로 읽음

@@ -1,5 +1,17 @@
 package crowl.maskmap.model;
 
+/**
+ * <pre>
+ * crowl.maskmap 
+ * Db.java
+ *
+ * 설명 : getter setter
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class Db {
 	String code;
 	String lat;

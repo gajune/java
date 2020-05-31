@@ -6,7 +6,18 @@ import org.apache.http.client.ClientProtocolException;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
-
+/**
+ * <pre>
+ * crowl 
+ * Httpclient1.java
+ *
+ * 설명 : httpclient 사용
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class Httpclient1 {
 	
     

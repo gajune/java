@@ -6,6 +6,18 @@ import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
+/**
+ * <pre>
+ * study.discord 
+ * TListener.java
+ *
+ * 설명 :
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class TListener extends ListenerAdapter{
 
     @Override

@@ -19,8 +19,25 @@ import com.google.gson.Gson;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.Statement;
 
-import study.db.annotation.HibernateAnnotationUtil;
+import crowl.maskmap.model.Db;
+import crowl.maskmap.model.MaskInfor;
+import crowl.maskmap.model.SalesList;
+import crowl.maskmap.model.StoreInfo;
+import crowl.maskmap.model.Storestate;
+import study.db.hibernate.annotation.HibernateAnnotationUtil;
 
+/**
+ * <pre>
+ * crowl.maskmap 
+ * MaskMap.java
+ *
+ * 설명 : 마스크맵
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class MaskMap {
 	int num = 1;
 	HttpClient client = HttpClients.createDefault();

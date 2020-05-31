@@ -6,6 +6,18 @@ import java.sql.SQLException;
 
 import com.mysql.jdbc.Connection;
 
+/**
+ * <pre>
+ * study.db 
+ * MariaDBTransaction.java
+ *
+ * 설명 :
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class MariaDBTransaction {
 
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  

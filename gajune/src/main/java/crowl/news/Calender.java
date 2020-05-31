@@ -1,7 +1,19 @@
 package crowl.news;
 
 
-public class calender {
+/**
+ * <pre>
+ * crowl.news 
+ * Calender.java
+ *
+ * 설명 :
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
+public class Calender {
 	/*Quiz. 20160101와 20160103을 입력하면
 	20160101
 	20160102
@@ -16,7 +28,7 @@ public class calender {
 				lastday = 28;
 				if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0)
 					lastday = 29;
-				else
+			else
 					lastday = 28;
 				break;
 			case 4:

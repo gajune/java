@@ -16,6 +16,20 @@ import org.jsoup.select.Elements;
 
 import com.google.gson.Gson;
 
+import crowl.news.model.NewsUI;
+
+/**
+ * <pre>
+ * crowl.news 
+ * News.java
+ *
+ * 설명 :
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class News {
 	public static void main(String[] args) throws IOException, InterruptedException {
 		InetAddress ia = null;		// 접속할 서버의 주소를 저장할 변수
@@ -51,7 +65,7 @@ public class News {
 		System.out.println("끝 날짜");
 		String d2 = sc.next();
 
-		test calcal = new test(d1, d2);
+		CalenderUI calcal = new CalenderUI(d1, d2);
 		for (int i : calcal.arrayList) {
 			int check = 0;
 			while (check == 0) {

@@ -5,8 +5,20 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * <pre>
+ * crowl.maskmap.model 
+ * StoreInfo.java
+ *
+ * 설명 :
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 @Entity
-@Table(name = "corona")
+@Table(name = "StoreInfo")
 public class StoreInfo {
 	@Column(name = "addr")
 	String addr;

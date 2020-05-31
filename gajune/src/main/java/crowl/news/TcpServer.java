@@ -12,6 +12,8 @@ import java.sql.SQLException;
 import com.google.gson.Gson;
 import com.mysql.jdbc.Connection;
 
+import crowl.news.model.NewsUI;
+
 
 /**
  * <pre>

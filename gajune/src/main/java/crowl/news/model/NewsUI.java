@@ -1,5 +1,17 @@
 package crowl.news.model;
 
+/**
+ * <pre>
+ * crowl.news.model 
+ * NewsUI.java
+ *
+ * 설명 :
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class NewsUI {
 	String title;
 	String contents;

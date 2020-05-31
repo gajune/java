@@ -9,6 +9,18 @@ import java.util.List;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.Statement;
 
+/**
+ * <pre>
+ * study.db 
+ * DBUtil.java
+ *
+ * 설명 :
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class DBUtil {
 	String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 	String DB_URL;

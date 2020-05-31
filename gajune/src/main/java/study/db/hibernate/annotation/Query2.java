@@ -1,4 +1,4 @@
-package study.db.annotation;
+package study.db.hibernate.annotation;
 
 import java.util.Iterator;
 

@@ -9,6 +9,18 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+/**
+ * <pre>
+ * crowl.moive 
+ * MoiveMain.java
+ *
+ * 설명 : 영화순위 불러옴
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class MoiveMain {
 	String URL = "https://movie.naver.com/movie/sdb/rank/rmovie.nhn";
 	Document doc = null;

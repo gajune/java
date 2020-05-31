@@ -6,6 +6,18 @@ import org.bitbucket.eunjeon.seunjeon.Analyzer;
 import org.bitbucket.eunjeon.seunjeon.Eojeol;
 import org.bitbucket.eunjeon.seunjeon.LNode;
 
+/**
+ * <pre>
+ * study 
+ * ReadmeJavaTest.java
+ *
+ * 설명 :
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class ReadmeJavaTest {
     
  public static void main(String[] args) {

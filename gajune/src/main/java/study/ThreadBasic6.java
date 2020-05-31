@@ -4,6 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.CountDownLatch;
 
+/**
+ * <pre>
+ * study 
+ * ThreadBasic6.java
+ *
+ * 설명 :
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class ThreadBasic6 {
 	
 	public void excute() {

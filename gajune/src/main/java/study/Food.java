@@ -3,7 +3,7 @@ package study;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class food {
+public class Food {
 
 	public static void main(String[] args) {
 		Scanner i = new Scanner(System.in);
@@ -18,7 +18,6 @@ public class food {
 		
 		System.out.println("필요갯수");
 		String t = i3.nextLine();
-		
 		System.out.println(s1.split("//s"));
 	}
 }

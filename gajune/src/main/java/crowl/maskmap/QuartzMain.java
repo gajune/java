@@ -15,7 +15,7 @@ import org.quartz.impl.StdSchedulerFactory;
  * crowl.maskmap 
  * QuartzMain.java
  *
- * 설명 :
+ * 설명 : 
  * </pre>
  * 
  * @since : 2020. 5. 24.

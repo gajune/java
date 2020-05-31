@@ -1,7 +1,19 @@
-package crowl.maskmap;
+package crowl.maskmap.model;
 
 import java.util.List;
 
+/**
+ * <pre>
+ * crowl.maskmap.model 
+ * Storestate.java
+ *
+ * 설명 :
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class Storestate {
 	String count;
 	String page;

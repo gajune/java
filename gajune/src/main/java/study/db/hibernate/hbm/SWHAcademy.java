@@ -1,4 +1,4 @@
-package study.db.hbm;
+package study.db.hibernate.hbm;
 
 
 /**

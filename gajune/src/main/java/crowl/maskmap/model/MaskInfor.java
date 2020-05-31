@@ -2,6 +2,18 @@ package crowl.maskmap.model;
 
 import java.util.List;
 
+/**
+ * <pre>
+ * crowl.maskmap.model 
+ * MaskInfor.java
+ *
+ * 설명 : 
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class MaskInfor {
 	int count;
 	int page;

@@ -1,5 +1,17 @@
 package study;
 
+/**
+ * <pre>
+ * study 
+ * User.java
+ *
+ * 설명 :
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class User {
 	String name;
 	int user_id;

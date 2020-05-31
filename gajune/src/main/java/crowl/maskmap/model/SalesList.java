@@ -5,8 +5,20 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * <pre>
+ * crowl.maskmap.model 
+ * SalesList.java
+ *
+ * 설명 :
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 @Entity
-@Table(name = "corona2")
+@Table(name = "StoreState")
 public class SalesList {
 	@Id
 	@Column(name = "code")

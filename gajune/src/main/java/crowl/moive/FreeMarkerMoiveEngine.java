@@ -9,11 +9,23 @@ import freemarker.template.TemplateException;
 import spark.ModelAndView;
 import spark.TemplateEngine;
 
-public class FreeMarkerTemplateEngine extends TemplateEngine {
+/**
+ * <pre>
+ * crowl.moive 
+ * FreeMarkerMoiveEngine.java
+ *
+ * 설명 : 프리마커엔진
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
+public class FreeMarkerMoiveEngine extends TemplateEngine {
 
 	private Configuration configuration;
 
-	protected FreeMarkerTemplateEngine() {
+	protected FreeMarkerMoiveEngine() {
 		this.configuration = createFreemarkerConfiguration();
 	}
 
@@ -35,7 +47,7 @@ public class FreeMarkerTemplateEngine extends TemplateEngine {
 
 	private Configuration createFreemarkerConfiguration() {
 		Configuration retVal = new Configuration();
-		retVal.setClassForTemplateLoading(FreeMarkerTemplateEngine.class, "/freemarker/"); // 수정할
+		retVal.setClassForTemplateLoading(FreeMarkerMoiveEngine.class, "/freemarker/"); // 수정할
 																							// 것.
 		return retVal;
 	}

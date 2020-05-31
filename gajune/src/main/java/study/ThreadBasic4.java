@@ -1,6 +1,18 @@
 package study;
 
 import java.util.LinkedList;
+/**
+ * <pre>
+ * study 
+ * ThreadBasic4.java
+ *
+ * 설명 :
+ * </pre>
+ * 
+ * @since : 2020. 5. 31.
+ * @author : user
+ * @version : v1.0
+ */
 public class ThreadBasic4 extends Thread {
 	private int index;
 
