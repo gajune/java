@@ -9,6 +9,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import crowl.Crowl;
+
 /**
  * <pre>
  * crowl.moive 
@@ -21,7 +23,7 @@ import org.jsoup.select.Elements;
  * @author : user
  * @version : v1.0
  */
-public class MoiveMain {
+public class MoiveMain extends Crowl {
 	String URL = "https://movie.naver.com/movie/sdb/rank/rmovie.nhn";
 	Document doc = null;
 		public List<String> getMoive() {
