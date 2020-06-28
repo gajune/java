@@ -1,4 +1,4 @@
-package study.datastructure; 
+package study.datastructure.queue; 
 
 
 
