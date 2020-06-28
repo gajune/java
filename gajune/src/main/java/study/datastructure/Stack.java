@@ -1,4 +1,4 @@
-package study.stack; 
+package study.datastructure; 
 
 /**
  * <pre>

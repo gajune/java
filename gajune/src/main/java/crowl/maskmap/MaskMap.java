@@ -19,7 +19,7 @@ import com.google.gson.Gson;
 import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.Statement;
 
-import crowl.Crowl;
+import crowl.Collect;
 import crowl.maskmap.model.Db;
 import crowl.maskmap.model.MaskInfor;
 import crowl.maskmap.model.SalesList;
@@ -39,7 +39,7 @@ import study.db.hibernate.annotation.HibernateAnnotationUtil;
  * @author : user
  * @version : v1.0
  */
-public class MaskMap extends Crowl {
+public class MaskMap{
 	int num = 1;
 	HttpClient client = HttpClients.createDefault();
 	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  

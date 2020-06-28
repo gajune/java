@@ -9,7 +9,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-import crowl.Crowl;
+import crowl.Collect;
 
 /**
  * <pre>
@@ -23,11 +23,11 @@ import crowl.Crowl;
  * @author : user
  * @version : v1.0
  */
-public class MoiveMain extends Crowl {
+public class MoiveMain extends Collect {
 	String URL = "https://movie.naver.com/movie/sdb/rank/rmovie.nhn";
 	Document doc = null;
-		public List<String> getMoive() {
-			List<String> ranking = new ArrayList<String>();
+		public List<Object> getMoive() {
+			List<Object> ranking = new ArrayList<Object>();
 			try {
 				doc = Jsoup.connect(URL).get();
 			} catch (IOException e) {

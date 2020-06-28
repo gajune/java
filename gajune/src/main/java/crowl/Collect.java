@@ -1,6 +1,6 @@
-package crowl; 
+package crowl;
 
-
+import java.util.List;
 
 /**
  * <pre>
@@ -14,5 +14,6 @@ package crowl;
  * @author : user
  * @version : v1.0
  */
-public abstract class Crowl {
+public abstract class Collect {
+	public abstract List<Object> getMoive();
 }
