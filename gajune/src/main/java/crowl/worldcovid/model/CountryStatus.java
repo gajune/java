@@ -1,5 +1,11 @@
-package crowl.worldcovid.model; 
+package crowl.worldcovid.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  * <pre>
@@ -13,19 +19,49 @@ package crowl.worldcovid.model;
  * @author : user
  * @version : v1.0
  */
+@Entity
+@Table(name = "CountryStatus")
 public class CountryStatus {
+	@Id
+	@GeneratedValue
+	public long id;
+	
+	@Column(name = "Country")
 	String Country;
+	
+	@Column(name = "CountryCode")
 	String CountryCode;
+	
+	@Column(name = "Province")
 	String Province;
+	
+	@Column(name = "City")
 	String City;
+	
+	@Column(name = "CityCode")
 	String CityCode;
+	
+	@Column(name = "Lat")
 	String Lat;
+	
+	@Column(name = "Lon")
 	String Lon;
+	
+	@Column(name = "Confirmed")
 	String Confirmed;
+	
+	@Column(name = "Deaths")
 	String Deaths;
+	
+	@Column(name = "Recovered")
 	String Recovered;
+	
+	@Column(name = "Active")
 	String Active;
+	
+	@Column(name = "Date")
 	String Date;
+	
 	public String getCountry() {
 		return Country;
 	}
@@ -99,5 +135,5 @@ public class CountryStatus {
 		Date = date;
 	}
 	
-	
+
 }

@@ -8,6 +8,8 @@ import org.hibernate.service.ServiceRegistry;
 
 import crowl.maskmap.model.Db;
 import crowl.maskmap.model.StoreInfo;
+import crowl.worldcovid.WorldCovid19;
+import crowl.worldcovid.model.CountryStatus;
 
 
 
@@ -36,6 +38,7 @@ public class HibernateAnnotationUtil {
 			configuration.addAnnotatedClass(Person.class);
 			configuration.addAnnotatedClass(Db.class);
 			configuration.addAnnotatedClass(StoreInfo.class);
+			configuration.addAnnotatedClass(CountryStatus.class);
 			
 			
 			serviceRegistry = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties()).build();
