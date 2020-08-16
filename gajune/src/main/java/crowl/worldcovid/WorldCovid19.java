@@ -1,6 +1,9 @@
 package crowl.worldcovid;
 
 import java.io.IOException;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -9,6 +12,8 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.List;
 import java.util.Scanner;
+import java.util.TimeZone;
+
 
 import org.apache.http.HttpResponse;
 import org.apache.http.client.HttpClient;
@@ -20,7 +25,10 @@ import org.hibernate.SessionFactory;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+import com.mysql.jdbc.Connection;
+import com.mysql.jdbc.Statement;
 
+import crowl.maskmap.model.Db;
 import crowl.worldcovid.model.CountryStatus;
 import study.db.hibernate.annotation.HibernateAnnotationUtil;
 
@@ -37,6 +45,42 @@ import study.db.hibernate.annotation.HibernateAnnotationUtil;
  * @version : v1.0
  */
 public class WorldCovid19 {
+	static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
+	static final String DB_URL = "jdbc:mysql://dev-swh.ga:3306/gajune";
+
+	static final String USERNAME = "root";
+	static final String PASSWORD = "swhacademy!";
+	
+	public List<String> countryCode() {
+		ArrayList<String> list = new ArrayList<>();
+		Connection connection = null;
+		Statement statement = null;
+		try{
+			Class.forName(JDBC_DRIVER);
+			connection = (Connection) DriverManager.getConnection(DB_URL,USERNAME,PASSWORD);
+			statement = (Statement) connection.createStatement();
+			
+			//	select
+			ResultSet rs = statement.executeQuery("SELECT a.kor FROM CountryCode AS a;");
+
+			while(rs.next()){
+				list.add(rs.getString("kor"));
+			}
+			rs.close();
+		}catch(SQLException se1){
+			se1.printStackTrace();
+		}catch(Exception ex){
+			ex.printStackTrace();
+		}finally{
+			try{
+				if(statement!=null) statement.close();
+				if(connection!=null) connection.close();
+			}catch(SQLException se2){
+			}
+		}
+		return list;
+	}
+	
 	public String changeDate(String date) throws ParseException {
 		SimpleDateFormat fDate = new SimpleDateFormat("yyyyMMdd");
 		SimpleDateFormat sDate = new SimpleDateFormat("yyyy-MM-dd");
@@ -52,6 +96,18 @@ public class WorldCovid19 {
 		return d;
 	}
 
+	public long dateToLong(String string_date) {
+		SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'");
+		f.setTimeZone(TimeZone.getTimeZone("GMT"));
+		long milliseconds = 0;
+		try {
+		    Date d = f.parse(string_date);
+		    milliseconds = d.getTime();
+		} catch (ParseException e) {
+		    e.printStackTrace();
+		}
+		return milliseconds;
+	}
 	public static void main(String[] args) throws ParseException {
 		SessionFactory sessionFactory = HibernateAnnotationUtil.getSessionFactory();
 		String startday = null;
@@ -92,7 +148,7 @@ public class WorldCovid19 {
 		sc.close();
 		String url = "https://api.covid19api.com/country/" + country + "?from=" + startday + "T00:00:00Z&to=" + endday
 				+ "T23:59:59Z";
-	//	System.out.println(url);
+		//System.out.println(url);
 		HttpGet request = new HttpGet(url);
 
 		// 필요에 따라서는 헤더 추가
@@ -100,6 +156,7 @@ public class WorldCovid19 {
 
 		// 요청
 		HttpResponse response;
+		Session session = null;
 		try {
 			response = client.execute(request);
 			String result = EntityUtils.toString(response.getEntity());
@@ -107,17 +164,23 @@ public class WorldCovid19 {
 			List<CountryStatus> co = (List<CountryStatus>) gson.fromJson(result,
 					new TypeToken<ArrayList<CountryStatus>>() {
 					}.getType());
-			Session session = sessionFactory.openSession();
+			long beforeTime = System.currentTimeMillis();
+			session = sessionFactory.openSession();
 			session.beginTransaction();
 			for (CountryStatus object : co) {
+				object.setId(world.dateToLong(object.getDate()), object.getCountryCode());
+				//System.out.println(object.getId());
 				session.save(object);
-				//System.out.println(String.format("총 확진자수: %s  날짜: %s 도: %s " , object.getConfirmed(), object.getDate(), object.getProvince()));
 			}
 			session.getTransaction().commit();
-			session.close();
+			long afterTime = System.currentTimeMillis();
+			long secDiffTime = (afterTime - beforeTime);
+			System.out.println("시간차이(m) : "+secDiffTime);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally{
+			if(session != null) session.close();
 		}
 
 		// 응답

@@ -22,9 +22,10 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "CountryStatus")
 public class CountryStatus {
+
 	@Id
-	@GeneratedValue
-	public long id;
+	@Column(name = "id")
+	String id;
 	
 	@Column(name = "Country")
 	String Country;
@@ -133,6 +134,13 @@ public class CountryStatus {
 	}
 	public void setDate(String date) {
 		Date = date;
+	}
+	
+	public String getId() {
+		return id;
+	}
+	public void setId(long l, String country) {
+		this.id = l + country;
 	}
 	
 
